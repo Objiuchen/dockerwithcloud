@@ -1,0 +1,25 @@
+version: "2"
+
+services:
+
+  docker-client:
+    build: ./client
+    image: docker-client
+    ports:
+      - 8889:8889
+    links:
+      - docker-eureka:eureka-server
+
+  docker-service:
+    build: ./service
+    image: docker-service
+    ports:
+      - 8887:8887
+    links:
+      - docker-eureka:eureka-server
+
+  docker-eureka:
+    build: ./eureka-server
+    image: docker-eureka
+    ports:
+      - 8888:8888
