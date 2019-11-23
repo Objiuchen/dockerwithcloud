@@ -1,0 +1,13 @@
+server:
+  port: 8887
+
+# 注册到eureka的名字
+spring:
+  application:
+    name: service-a
+
+# 注册中心配置
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8888/eureka/
