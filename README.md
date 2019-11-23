@@ -1,10 +1,8 @@
-######引用
 >记录成长，成为更好的自己！
 
 # dockerwithcloud
 这是一个docker-componse部署springcloud微服务的项目，
 可以通过这个项目熟悉docker-componse部署微服务的简单应用。
-
 
 ##项目模块
 - eureka-server
